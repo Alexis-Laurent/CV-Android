@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CV_xamarin.Views.FormationsPage"
+             xmlns:vm="clr-namespace:CV_xamarin.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:FormationsViewModel />
+    </ContentPage.BindingContext>    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="10,20,10,20" Spacing="10" BackgroundColor="White">
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Concepteur d'applications" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Titre professionnel bac +4" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="École AFPA à Arras" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Février 2019 à janvier 2020" />
+                
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Développeur Web et Mobile" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Titre professionnel bac +2" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="École PopSchool à Lens" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Mars 2018 à août 2018" />
+
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Bac professionnel Électrotechnique" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Lycée La Peupleraie à Sallaumines" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Septembre 2005 à Juin 2007" />
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>    
+
+</ContentPage>

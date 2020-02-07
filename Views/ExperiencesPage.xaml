@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CV_xamarin.Views.ExperiencesPage"
+             xmlns:vm="clr-namespace:CV_xamarin.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:ExperiencesViewModel />
+    </ContentPage.BindingContext>    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="10,20,10,20" Spacing="10" BackgroundColor="White">
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Association El Fouad à Avion" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Stage en développement web pour la Création d'un site de publications en ASP.NET" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Octobre 2019 à Décembre 2019" />
+
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Entreprise G.I.R à Liévin" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Création d'un site commercial en WordPress." />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Juillet 2018 à août 2018" />
+
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Mission locale de Liévin" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Aide à la conception d'un site à destination des jeunes en insertion professionnelle." />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Avril 2018 à juillet 2018" />
+
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Entreprise Pelletier Déco Surface" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Services à la clientèle et aide livreur dans un magasin" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Juin 2017 à octobre 2017" />
+
+                <BoxView  HeightRequest="1" Color="#2196F3" Margin="20" />
+
+                <Label FontSize="Title" HorizontalOptions="Center" Text="Entreprise Pharmalab à Québec" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Opérateur en produit pharmaceutique" />
+                <Label FontSize="Body" HorizontalOptions="Center" Text="Mai 2016 à juin 2017" />
+                
+            </StackLayout>
+        </ScrollView>
+    </Grid>    
+
+</ContentPage>

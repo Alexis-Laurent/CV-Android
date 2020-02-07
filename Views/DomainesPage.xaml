@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CV_xamarin.Views.DomainesPage"
+             xmlns:vm="clr-namespace:CV_xamarin.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:DomainesViewModel />
+    </ContentPage.BindingContext>    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                <Image Source="net.png" Margin="30" WidthRequest="300" />
+                <Image Source="xamarin.png" Margin="30" WidthRequest="300" />
+                <Image Source="angular.png" Margin="30" WidthRequest="300" />
+                <Image Source="wordpress.jpg" Margin="30" WidthRequest="300" />
+                <Image Source="three_js.png" Margin="30" WidthRequest="300" />
+                <Image Source="sql_server.jpg" Margin="30" WidthRequest="300" />
+                <Image Source="php_mysql.jpg" Margin="30" WidthRequest="300" />
+                <Image Source="photoshop.jpg" Margin="30" WidthRequest="300" />
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>   
+
+</ContentPage>
